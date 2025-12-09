@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AXOLOTL - HISTORY</title>
+</head>
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333;
+    padding-top: 120px;
+}
+
+
+/* 🔥 동일한 헤더 효과 적용 완료 */
+header {
+    width: 100%;
+    padding: 25px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    background: rgba(255,255,255,0.6);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(255,255,255,0.5);
+}
+
+        .logo a{
+    font-size: 18px;
+    letter-spacing: 1px;
+    text-decoration: none;
+    color:#333
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-size: 14px;
+}
+
+/* MAIN WRAPPER */
+.container {
+    padding: 0 40px;
+}
+
+/* HERO */
+.hero {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.hero-img {
+    width: 100%;
+    height: 380px;
+    background: #ccc;
+    object-fit: cover;
+}
+
+.hero-text {
+    position: absolute;
+    bottom: 40px;
+    left: 40px;
+    color: white;
+    text-shadow: 0 0 8px rgba(0,0,0,0.7);
+}
+
+.hero-text h1 {
+    font-size: 48px;
+    font-weight: bold;
+}
+
+.separator {
+    height: 1px;
+    background-color: #ffffff;
+    margin: 40px 0;
+}
+
+/* IMAGE ROW */
+.three-images {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    flex: 1 1 calc(33.333% - 20px);
+}
+
+.small-img {
+    width: 100%;
+    height: 220px;
+    background: #ccc;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+/* VIDEO ROW */
+.video-row {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.video-box {
+    flex: 2;
+    width: 100%;
+    height: 320px;
+    background: #ffffff;
+}
+
+.video-text { flex: 1; }
+
+/* TEXT + VIDEO */
+.text-video {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.text-col { flex: 1; }
+
+.video-large {
+    flex: 2;
+    width: 100%;
+    height: 360px;
+    background: #ffffff;
+}
+
+/* ALWAYS ON SECTION */
+.mobile-only { 
+    display: block; 
+    margin-top:-1px;
+}
+
+/* FOOTER */
+.footer {
+    width: 100%;
+    background: #808080;
+    color: white;
+    padding: 45px 100px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.footer-left { text-align: left; }
+
+.footer-title {
+    font-size: 32px;
+    font-weight: 500;
+    margin-bottom: -5px;
+}
+
+.footer-instagram {
+    font-size: 16px;
+    opacity: 0.9;
+}
+
+.footer-center {
+    text-align: left;
+    font-size: 11px;
+    width: 320px;
+    line-height: 1.6;
+    margin-left: 700px;
+}
+
+.footer-right {
+    text-align: left;
+    font-size: 11px;
+    line-height: 1.6;
+    width: 380px;
+}
+
+.footer-heading {
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+    .three-images .card { flex: 1 1 calc(50% - 10px); }
+}
+
+@media (max-width: 700px) {
+    .video-row, .text-video { flex-direction: column; }
+}
+
+@media (max-width: 480px) {
+    .three-images .card { flex: 1 1 100%; }
+}
+</style>
+
+<body>
+
+<header>
+    <div class="logo"><a href="index.html">AXOLOTL</a></div>
+    <nav>
+         <ul>
+            <li><a href="about.html">about</a></li>
+            <li><a href="place.html">place</a></li>
+            <li><a href="history.html">history</a></li>
+            <li><a href="campaign.html">campaign</a></li>
+            <li><a href="tips.html">tips</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main class="container">
+
+<section class="hero">
+    <img src="source/history_1.jpeg" class="hero-img" alt="main image">
+    <div class="hero-text">
+        <h1>HISTORY</h1>
+        <p>우파/루파와의 기억 아카이브</p>
+    </div>
+</section>
+
+<hr class="separator">
+
+<section class="three-images">
+    <div class="card">
+        <img src="source/history_2.jpg" class="small-img" alt="img">
+        <h3>1. 처음 만난 날</h3>
+        <p>처음 친구에게서 우파루파를 받아왔습니다, 원래는 한마리만 키울 계획이었는데 친구 아버님께서
+           우파루파가 너무 많아서 두마리를 주셨다고하며 비닐봉지에 깨끗한 물에 담긴 작고 귀여운 새끼
+           우파루파 두마리를 친구가 건내주었습니다, 집에와서 작은 어항을 꾸미고 우파루파를 집어 넣으려고
+           하는데 한마리가 튀어올라 그만 바닥에 떨어져버렸습니다, 정말 당황해서 어쩔줄 몰랐지만
+           손으로 어찌저찌 집어 다시 어항에 넣어주었습니다 정말 미안했어 루파야..
+        </p>
+    </div>
+
+    <div class="card">
+        <img src="source/history_3.jpg" class="small-img" alt="img">
+        <h3>2. 시행착오</h3>
+        <p>그냥 물에만 넣어주면 물고기 처럼 잘 클것이라고 생각했지만 아니였습니다, 이미 데려오기 전부터 공부하여
+           정수기 물을 사용하여 어항세팅을 하고 은신처도 마련해야 된다는 것을 알았지만, 온도에대한 개념은 몰랐습니다
+           물에 넣어주니 상태가 더 악화되어 얼른 온도계를 마련하고 매일매일 삼다수 얼린 패트병, 얼음을 넣으며
+           관리해주었습니다, 물에 가라앉는 사료도 준비해서 핀셋으로 하나하나 떨어트려 먹여줬던 기억이 나네요 ㅎㅎ
+           우파루파는 이마에 물체가 떨어지면 그걸 인식해서 먹기때문에 먹이주기 정말 힘들었습니다 그래도 먹는모습이
+           정말 귀여웠죠 
+        </p>
+    </div>
+
+    <div class="card">
+        <img src="source/history_4.jpg" class="small-img" alt="img">
+        <h3>3. 사고친 날</h3>
+        <p>우파루파 어항을 예쁘게 꾸며준다고 입에 들어갈만한 크기의 돌맹이를 넣어줬다가
+           루파가 그걸 먹고 입에 걸려서 먹이를 못먹는 상황이 벌어졌었습니다, 정말 너무 당황해서 심장이 내려앉는 기분이었고
+           뜨거운손이 우파루파에게 닿으면 큰일 날 수 있기에 최대한 차가운 물을 받아서 대야에 돌을 삼킨 루파를 넣고 비닐장갑을 끼고
+           손으로 입을 벌려서 겨우 꺼내줬었던 기억이 있습니다.. 왜 항상 이런일은 루파한테 일어나는지.. 그 후로 바닥재는 다 없애고
+           탱크 어항으로 키웠던 기억이 있네요, 3년간 잘 큰 것을 보면 이상은 없었나봅니다 
+        </p>
+    </div>
+</section>
+
+<hr class="separator">
+
+<section class="video-row">
+    <video class="video-box" src="source/history_5.mp4" autoplay loop muted ></video>
+    <div class="video-text">
+        <h3>4. 이렇게 커질줄은</h3>
+        <p>우파루파와의 추억을 담은 영상입니다 ㅎㅎ 우파루파를 데려왔을때부터, 어항크기를 바꾼날,루파 입에서
+           나온 돌,회복한 루파, 어항 인테리어 변화 등등을 담은 영상입니다 예전엔 아주 작고 귀여웠는데 이제는
+           너무 커버려서 우파루파가 아니라 메기 수준이지만 아직도 귀엽네요 
+        </p>
+    </div>
+</section>
+
+<hr class="separator">
+
+<section class="text-video">
+    <div class="text-col">
+        <h3>5. 현재</h3>
+        <p>현재 우파/루파의 모습입니다 제가 작명 센스가 없어서 큰놈은 우파 작은놈은 루파라고 부르고있습니다 ㅋㅋ
+           우파루파 특성상 불빛을 싫어해서 사진찍거나 영상찍을때만 키는데 스트레스 받아서 자꾸 만들어놓은 은신처에 들어가려고
+           애를 쓰네요 ㅋㅋㅋㅋ 토실토실한 뒷모습이 정말 귀엽습니다, 요즘은 어항 환수도 잘 못해주고 밥도 일주일에 2~3번식밖에 못주는데
+           관리를 잘 못해준거 같아서 미안하네요(우파루파 특성상 밥을 매일매일 안챙겨줘도 문제없이 삽니다 오해마세요! ㅠ 매일주면 오히려 살쪄요) 
+           군대가기전에 어항한번 깨끗하게 청소해주고 가야겠어요.. 
+        </p>
+    </div>
+    <video class="video-large" src="source/history_6.mp4" autoplay loop muted></video>
+</section>
+
+<section class="mobile-only">
+    <h3>6. 우파/루파에게</h3>
+    <p>우파루파야 처음왔을때는 손가락 마디 크기였는데 이제는 팔뚝만큼 커줬구나 내가 원래는 뭘 키우면 끝이 있다는것이
+       싫어서 뭘 잘 안키우고 싶었는데 너네를 처음보고 홀린듯이 다 해주고 끝까지 키우고 싶어졌어 그래서 물온도, 우파루파
+       서식환경, <br>우라루파 네이버 카페 등등 다 찾아보고 너네 조금이라도 문제 생기면 밤낮 안가리고 환수해주고 3시간씩 어항청소하고
+       그랬는데 내 노고를 너네가 잘 알아줄진 모르겠지만 앞으로도 이렇게 쭉 잘 커줘서 다음에는 다리 하나 만큼 크거라 ㅋㅋ 
+       그때되면 횟집 어항을 사서 집에다가 자리하나 마련해줄게 ㅋㅋ 앞으로도 쭉 같이살자!!
+    </p>
+</section>
+
+<hr class="separator">
+
+</main>
+
+<footer class="footer">
+    <div class="footer-left">
+        <div class="footer-title">AXOLOTL</div>
+        <div class="footer-instagram">@2eem_06 (instagram)</div>
+    </div>
+
+    <div class="footer-center">
+        <div class="footer-heading">참고한 연구/보호기관</div>
+        <div>Amphibian Ark (AArk)</div>
+        <div>GIAX (Axolotl Research Group - Xochimilco)</div>
+        <div>Somos Axolotl</div>
+    </div>
+
+    <div class="footer-right">
+        <div class="footer-heading">사진 출처</div>
+        <div>:https://www.google.com/search?q=+IUCN&s<br>
+        ca_esv=0cf4e596d1fd0e2a&udm=2&biw=1707&bih=772&xsrf<br>
+        =AE3TiFMuKrk79ZeA-gBV-7yZAV3jdhQEA%3A1764062486466&<br>
+        ei=FnUladqYHPH</div>
+    </div>
+</footer>
+
+</body>
+</html>

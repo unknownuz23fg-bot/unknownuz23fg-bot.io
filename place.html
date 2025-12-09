@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AXOLOTL</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Pretendard", Arial, Helvetica, sans-serif;
+    padding-top: 90px;
+    background: #fff;
+    color: #222;
+}
+
+/* HEADER — 통일된 버전 */
+header {
+    width: 100%;
+    padding: 25px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    background: rgba(255,255,255,0.6);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(255,255,255,0.5);
+}
+
+        .logo a{
+    font-size: 18px;
+    letter-spacing: 1px;
+    text-decoration: none;
+    color:#333
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-size: 14px;
+}
+
+/* HERO */
+.hero {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 100px;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+}
+
+.hero-text {
+    position: absolute;
+    left: 80px;
+    bottom: 60px;
+    color: white;
+}
+
+.hero-text h1 {
+    font-size: 64px;
+    font-weight: 700;
+}
+
+.hero-text p {
+    font-size: 28px;
+    margin-top: 8px;
+}
+
+/* SECTION */
+.section {
+    width: 100%;
+    padding: 90px 100px;
+}
+
+.split {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 60px;
+}
+
+.reverse {
+    flex-direction: row-reverse;
+}
+
+.img-box {
+    width: 55%;
+    border-radius: 4px;
+}
+
+.text-box {
+    width: 45%;
+}
+
+.text-box h2 {
+    font-size: 26px;
+    font-weight: 700;
+    margin-bottom: 16px;
+    line-height: 1.3;
+}
+
+.text-box p {
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+/* 서늘한 곳 */
+.section.cool {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.section.cool .text-box {
+    text-align: left;
+}
+
+.section.cool .img-box {
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* FOOTER */
+.footer {
+    width: 100%;
+    background: #808080;
+    color: white;
+    padding: 45px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.footer-left { text-align: left; }
+
+.footer-title {
+    font-size: 32px;
+    font-weight: 500;
+    margin-bottom: -5px;
+}
+
+.footer-instagram {
+    font-size: 16px;
+    opacity: 0.9;
+}
+
+.footer-center {
+    text-align: left;
+    font-size: 12px;
+    width: 320px;
+    line-height: 1.6;
+    margin-left: 200px;
+}
+
+.footer-right {
+    text-align: left;
+    font-size: 12px;
+    line-height: 1.6;
+    width: 320px;
+}
+
+.footer-heading {
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+    .split {
+        flex-direction: column;
+    }
+
+    .img-box,
+    .text-box {
+        width: 100%;
+    }
+
+    .hero-text h1 {
+        font-size: 40px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+     <div class="logo"><a href="index.html">AXOLOTL</a></div>
+    <nav>
+        <ul>
+            <li><a href="about.html">about</a></li>
+            <li><a href="place.html">place</a></li>
+            <li><a href="history.html">history</a></li>
+            <li><a href="campaign.html">campaign</a></li>
+            <li><a href="tips.html">tips</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="hero">
+    <img src="source/main_img.jpg" width=20%>
+    <div class="hero-text">
+        <h1>MEXICO</h1>
+        <p>아홀로틀의 서식지 호치밀코</p>
+    </div>
+</section>
+
+<section class="section split">
+    <img src="source/place_1.jpg" class="img-box" alt="img">
+    <div class="text-box">
+        <h2>물이 맑고 고요한 곳</h2>
+        <p>
+          우파루파는 맑고 깨끗하고 고요한 곳을 좋아합니다, 귀와 눈이 퇴화됐지만 대신 냄세와 진동에 정말 예민해서
+          제가 밥주러 걸어올때 제가 있는곳을 쳐다볼 정도로 정말 진동에 예민합니다 그래서 고요한 곳을 좋아하고,
+          우파루파는 수질에 예민한데 수질이 나빠지면 바로 아가미가 녹거다 배에 복수가 차는 등, 죽을 위기는
+          아니지만 그 근처에 갈정도로 위험해지기 때문에 원래 서식지도 물이 맑지만 고요한, 호치밀코의 하류쪽 고요한 부근에 서식
+          하거나 합니다
+        </p>
+    </div>
+</section>
+
+<section class="section split cool">
+    <div class="text-box">
+        <h2>서늘한 곳</h2>
+        <p>
+            아홀로틀은 주로 어두운 곳에 서식합니다, 능동적으로 먹이를 찾을때도 있지만 거의 움직임이 없기 때문에, 
+            모기 유충이나 작은 미생물, 혹은 정말 작은 민물새우,생선등을 먹는데 동굴이나 물이 깨끗한곳, 어두운곳에
+            먹이들이 많았기 때문에 동굴에서 생활하여 눈이 퇴화하고 후각이 발달했습니다, 따라서 어둡고 서늘한곳에
+            자주 있게되어 그런 쪽으로 진화했는데 도룡뇽의 전 단계라고 보시면 될 것 같습니다. 온도가 높아지면
+            아가미가 녹는데 이건 아홀로틀이 물에서 살기 어렵게 만들어 정말 위험합니다
+        </p>
+    </div>
+    <img src="source/place_2.jpg" class="img-box" alt="img">
+</section>
+
+<section class="section split">
+    <img src="source/place_3.jpg" class="img-box" alt="img">
+    <div class="text-box">
+        <h2>서식지에 따른 수족관 구성</h2>
+        <p>
+            서식지 환경을 재현하는 것이 매우 중요합니다.
+            안정적인 수온, 은신처 제공, 수질 관리 등이 필수 요소입니다, 많은 사람들이 아홀로틀을 관상용으로
+            키우는데, 보통 불을 키고 있는 경우가 많습니다 아홀로틀은 위에도 말했듯이 빛에 익숙하지 않은 환경에서자라
+            시각이 많이 떨어지기 때문에 이를 자극하면 정말 많은 스트레스를 받습니다,만약 불을 자주 키는 환경이라면
+            은신처는 필수입니다, 또한 물 환수도 일주일에 두세번을 해야될정도로 중요하고 아홀로틀은 물에서 살지만
+            산소공급이 중요하기 때문에 산소 공급기, 여과기는 필수입니다,바닥재도 있으면 좋지만 권장하지 않습니다,
+            바닥재를 먹게되면 장기에 손상이가서 아홀로틀에게 위험할 수 있습니다.
+        </p>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="footer-left">
+        <div class="footer-title">AXOLOTL</div>
+        <div class="footer-instagram">@2eem_06 (instagram)</div>
+    </div>
+
+    <div class="footer-center">
+        <div class="footer-heading">참고한 연구/보호기관</div>
+        <div>Amphibian Ark (AArk)</div>
+        <div>GIAX (Axolotl Research Group - Xochimilco)</div>
+        <div>Somos Axolotl</div>
+    </div>
+
+    <div class="footer-right">
+        <div class="footer-heading">사진 출처</div>
+        <div>https://www.google.com/search?q=IUCN...</div>
+    </div>
+</footer>
+
+</body>
+</html>

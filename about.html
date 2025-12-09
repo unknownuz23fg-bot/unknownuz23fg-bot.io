@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AXOLOTL</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333;
+    padding-top: 100px;
+}
+
+/* HEADER (고정 + 통일 버전) */
+header {
+    width: 100%;
+    padding: 25px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    background: rgba(255,255,255,0.6);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(255,255,255,0.5);
+}
+
+        .logo a{
+    font-size: 18px;
+    letter-spacing: 1px;
+    text-decoration: none;
+    color:#333
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-size: 14px;
+}
+
+/* COMMON */
+.box {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    background: none;
+    display: block;
+}
+
+/* SECTION 1 */
+.section1 {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 80px 40px;
+    gap: 40px;
+}
+
+.left-img {
+    width: 55%;
+    height: 350px;
+}
+
+.right-text {
+    width: 45%;
+}
+
+.right-text h1 {
+    font-size: 70px;
+    margin-bottom: 20px;
+}
+
+.right-text h2 {
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+.right-text p {
+    line-height: 1.6;
+    font-size: 14px;
+}
+
+/* SECTION 2 */
+.section2 {
+    padding: 100px 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.center-img {
+    width: 70%;
+    height: 300px;
+}
+
+/* SECTION 3 */
+.section3 {
+    display: flex;
+    justify-content: space-between;
+    padding: 60px 40px 120px;
+    gap: 40px;
+    margin-left:165px;
+}
+
+.col {
+    width: 33.333%;
+}
+
+.col h3 {
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+
+.col p {
+    line-height: 1.6;
+    font-size: 14px;
+}
+
+/* FOOTER */
+.footer {
+    width: 100%;
+    background: #808080;
+    color: white;
+    padding: 45px 100px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.footer-left {
+    text-align: left;
+}
+
+.footer-title {
+    font-size: 32px;
+    font-weight: 500;
+    margin-bottom: -5px;
+}
+
+.footer-instagram {
+    font-size: 16px;
+    opacity: 0.9;
+}
+
+.footer-center {
+    text-align: left;
+    font-size: 11px;
+    width: 320px;
+    line-height: 1.6;
+    margin-left: 700px;
+}
+
+.footer-right {
+    text-align: left;
+    font-size: 11px;
+    line-height: 1.6;
+    width: 380px;
+}
+
+.footer-heading {
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* 반응형 */
+@media (max-width: 1024px) {
+    .section1 {
+        flex-direction: column;
+    }
+
+    .left-img, .right-text {
+        width: 100%;
+    }
+
+    .center-img {
+        width: 90%;
+    }
+
+    .section3 {
+        flex-direction: column;
+        margin-left: 0;
+    }
+
+    .col {
+        width: 100%;
+    }
+
+    .footer {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .footer-center {
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        padding: 20px;
+    }
+
+    nav ul {
+        gap: 15px;
+    }
+
+    .right-text h1 {
+        font-size: 40px;
+    }
+
+    .center-img {
+        height: 220px;
+    }
+
+    .box img {
+        width: 100%;
+        height: auto;
+    }
+}
+</style>
+<body>
+
+<header>
+     <div class="logo"><a href="index.html">AXOLOTL</a></div>
+    <nav>
+        <ul>
+            <li><a href="about.html">about</a></li>
+            <li><a href="place.html">place</a></li>
+            <li><a href="history.html">history</a></li>
+            <li><a href="campaign.html">campaign</a></li>
+            <li><a href="tips.html">tips</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="section1">
+    <div class="left-img box">
+        <img src="source/about_1.jpeg" alt="Left Image">
+    </div>
+
+    <div class="right-text">
+        <h1>AXOLOTL</h1>
+        <h2>“우파루파? 아니, 아홀로틀!”</h2>
+        <p>
+            이 사이트는 여러분이 잘 아시는 우파루파에 대해 소개합니다.<br>
+            저는 우파루파, 정식 명칭으로는 아홀로틀을 키우는 사람으로써<br>
+            여러분이 아홀로틀에 더욱 관심갖고 아홀로틀의 매력, 신기함,<br>
+            처한 위기에 대해 소개하며 여러분이 아홀로틀을 더 사랑해주셨으면<br>
+            하는 마음에 이 사이트를 기획하였습니다.<br>
+            아홀로틀(우파루파로 불리는 ‘멕시코 도롱뇽’)은 멸종 위기 종으로 지정된<br>
+            매우 희귀한 양서류입니다. 주로 멕시코 호수 일대에 서식했으나<br>
+            서식지 파괴와 수질 오염 등으로 개체 수가 크게 감소해<br>
+            보존 활동이 매우 중요한 상황입니다.
+        </p>
+    </div>
+</section>
+
+<section class="section2">
+    <div class="center-img box">
+        <img src="source/about_2.jpg" alt="Center Image">
+    </div>
+</section>
+
+<section class="section3">
+    <div class="col">
+        <h3>Leucistic</h3>
+        <p>
+          우파루파 루시스틱(Luecistic)은 전신이 밝은 분홍빛 또는 흰색을 띠며 매우 깨끗한 색조가 특징입니다.
+          눈은 일반적으로 검은색이며, 알비노와 달리 색소가 일부 남아 있어 대비가 선명합니다.
+          피부가 투명해 보일 정도로 부드럽고 은은한 느낌을 주어 관상용으로 가장 인기가 많습니다.
+          빛에 따라 은은하게 반사되는 색감 덕분에 사진과 영상에서도 아름답게 표현됩니다.
+          성격은 일반 우파루파와 동일하지만 외형적 매력으로 인해 많은 애호가들이 선호합니다.
+        </p>
+    </div>
+
+    <div class="col">
+        <h3>Melanoid</h3>
+        <p>
+            우파루파 멜라노이드(Melanoid)는 전신에 멜라닌 색소가 풍부해 짙은 검정 또는 어두운 갈색을 띠는 것이 특징입니다.
+            눈에도 반사판(iridophore)이 없어 광택 없이 매트한 느낌을 줍니다.
+            전반적으로 단색에 가깝고 심플한 외형 덕분에 차분하고 묵직한 분위기를 가지고 있습니다.
+            빛의 각도에 따라 색이 크게 변하지 않아 안정적인 색감을 선호하는 사육자들에게 인기가 있습니다.
+            일반 우파루파와 동일한 성격을 지니지만 어두운 색감으로 인해 더욱 강인한 인상을 줍니다.
+        </p>
+    </div>
+
+    <div class="col">
+        <h3>Wild Type</h3>
+        <p>
+            우파루파 와일드타입(Wild Type)은 자연 상태의 색을 가장 잘 반영한 대표적인 기본 색상의 개체입니다.
+            몸은 올리브색·갈색·검정이 섞인 점박이 패턴을 가지며 자연 서식지 위장색과 유사합니다.
+            눈에는 반사판(iridophore)이 있어 빛을 받으면 은빛이나 금빛으로 반짝입니다.
+            전체적으로 야생적인 분위기를 풍겨 가장 ‘우파루파다운’ 외형으로 여겨집니다.
+            튼튼한 인상과 선명한 패턴 덕분에 사육자들 사이에서 꾸준히 인기 있는 종류입니다.
+        </p>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="footer-left">
+        <div class="footer-title">AXOLOTL</div>
+        <div class="footer-instagram">@2eem_06 (instagram)</div>
+    </div>
+
+    <div class="footer-center">
+        <div class="footer-heading">참고한 연구/보호기관</div>
+        <div>Amphibian Ark (AArk)</div>
+        <div>GIAX (Axolotl Research Group - Xochimilco)</div>
+        <div>Somos Axolotl</div>
+    </div>
+
+    <div class="footer-right">
+        <div class="footer-heading">사진 출처</div>
+        <div>:https://www.google.com/search?q=+IUCN&s<br>
+        ca_esv=0cf4e596d1fd0e2a&udm=2&biw=1707&bih=772&xsrf<br>
+        =AE3TiFMuKrk79ZeA-gBV-7yZAV3jdhQEA%3A1764062486466&<br>
+        ei=FnUladqYHPH</div>
+    </div>
+</footer>
+
+</body>
+</html>

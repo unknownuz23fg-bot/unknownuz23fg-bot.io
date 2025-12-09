@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Axolotl Tips</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Pretendard", Arial, Helvetica, sans-serif;
+            font-size: 15px;
+            line-height: 1.6;
+            color: #111;
+        }
+
+        /* ✔ 통일된 헤더 */
+        header {
+            width: 100%;
+            padding: 25px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 10;
+            background: rgba(255,255,255,0.6);
+            backdrop-filter: blur(12px);
+            border-bottom: 1px solid rgba(255,255,255,0.5);
+        }
+        .logo a{
+         font-size: 18px;
+         letter-spacing: 1px;
+         text-decoration: none;
+         color:#333
+         }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 30px;
+        }
+        nav a {
+            text-decoration: none;
+            color: #333;
+            font-size: 14px;
+        }
+
+        .hero {
+            margin-top: 90px;
+            position: relative;
+            width: 100%;
+            height: 420px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+        }
+
+        .hero img, .hero video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .hero-text {
+            position: absolute;
+            left: 40px;
+            bottom: 50px;
+            color: white;
+            font-size: 48px;
+            font-weight: 700;
+        }
+
+        .hero-desc {
+            position: absolute;
+            left: 40px;
+            bottom: 12px;
+            color: white;
+            font-size: 20px;
+            opacity: 0.9;
+        }
+
+        .content-section {
+            margin: 80px auto;
+            width: 90%;
+            max-width: 1500px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-column-gap: 60px;
+            grid-row-gap: 50px;
+        }
+
+        .text-block {
+            font-size: 17px;
+            line-height: 1.7;
+        }
+
+        .text-block h3 {
+            font-size: 22px;
+            margin-bottom: 8px;
+        }
+
+        .img-large, .img-middle, .img-small {
+            width: 100%;
+            object-fit: cover;
+            background: #d1d1d1;
+        }
+
+        .img-large { height: 250px; }
+        .img-middle { height: 180px; }
+        .img-small { height: 160px; }
+
+        .img-line-3 {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+        }
+
+        footer.footer {
+            width: 100%;
+            background: #808080;
+            color: white;
+            padding: 55px 100px;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-top: 120px;
+        }
+
+        .footer-left { text-align: left; }
+
+        .footer-title {
+            font-size: 30px;
+            font-weight: 600;
+            margin-bottom: 6px;
+        }
+
+        .footer-instagram {
+            font-size: 14px;
+            opacity: 0.9;
+        }
+
+        .footer-center {
+            font-size: 12px;
+            width: 320px;
+            line-height: 1.7;
+            margin-left: 680px;
+        }
+
+        .footer-right {
+            font-size: 12px;
+            width: 380px;
+            line-height: 1.7;
+        }
+
+        .footer-heading {
+            font-weight: 700;
+            margin-bottom: 5px;
+            font-size: 13px;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+     <div class="logo"><a href="index.html">AXOLOTL</a></div>
+    <nav>
+        <ul>
+            <li><a href="about.html">about</a></li>
+            <li><a href="place.html">place</a></li>
+            <li><a href="history.html">history</a></li>
+            <li><a href="campaign.html">campaign</a></li>
+            <li><a href="tips.html">tips</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="hero">
+    <img src="source/history_3.jpg" alt="Tips Image">
+    <div class="hero-text">Tips</div>
+    <div class="hero-desc">아홀로틀을 키우고 싶으신분!~</div>
+</section>
+
+<section class="content-section">
+
+    <div class="text-block">
+        <h3>1. 아홀로틀 잘 알기</h3>
+        <p>아홀로틀은 진화가 덜 된 멕시코 도룡뇽입니다. 따라서 앙서류로 분류가 됩니다
+           배 밑의 생식기로 암수구분이 가능하며 아가미의 색이나 풍성도에따라 건강 체크가 가능합니다
+           번식은 서식지가 안전하다고 판단됐을때 풀이나 스펀지, 또는 번식용 로프 같은곳에하며, 
+           흔한 질병으로는 배에 복수가 차는 복수병, 물곰팡이 등등이 있습니다 온도,수질관리에 아주 신경을
+           많이 써야하는 생물입니다 잘 키우기 어렵습니다 
+        </p>
+    </div>
+    <img class="img-large" src="source/tips_1.jpg" alt="IMG">
+
+    <div class="text-block">
+        <h3>2. 어항 세팅</h3>
+        <p>다이소 어항 온도계,산소 공급기 콩돌이, 여과기(아마존 여과기 최고,소리안남) 등등이 필요하고
+            당연하게도 어항, 바닥재(굳이 필요없음 미관을 위해 필요하다면 아주 작거나 우파루파 입보다 큰 것)
+            바닥재는 모레나 매끈한 돌 아니면 X, 은신처는 필수이며 집에 정수기가 없다면 물은 생수로 갈아주거나
+            그냥 물을 하루 동안 내비둬서 물에 염소를 제거하고 물을 넣어줘야합니다 또한 데려온 우파루파가 있던
+            물에 조금씩 세팅한 어항의 물을 넣어주면서 물맞댐하고 물에 넣어줘야 스트레스를 덜 받습니다 
+        </p>
+    </div>
+
+    <div class="img-line-3">
+        <img class="img-small" src="source/tips_2.jpg" alt="IMG">
+        <img class="img-small" src="source/tips_3.jpg" alt="IMG">
+        <img class="img-small" src="source/tips_4.jpg" alt="IMG">
+    </div>
+
+    <div class="text-block">
+        <h3>3. 유의할 점</h3>
+        <p>온도 세팅은 선택이 아니고 필수입니다, 여름철이되면 생수를 얼려서 물 위에 넣어줘야 우파루파가 죽지않고 잘
+           삽니다 물 온도는 20~22도 사이를 유지해주는게 좋습니다, 불을 너무 자주키면 우파루파를 자극할 수 있습니다 
+           ,또한 소음에 자주 노출되는 환경은 우파루파에게 혼란을 줘서 모든 환경이 다 갖춰졌는데도 우파루파가 싫어
+           할 수있습니다, 우파루파를 키우다보면 어느샌가 음침해져있는 나 자신을 발견하게됩니다 너무 케어하다보면
+           본인 건강도 못챙길수있으니 본인도 밖에 자주 나가서 햇빛으로 비타민D를 챙기시기 바랍니다.
+        </p>
+    </div>
+    <img class="img-large" src="source/tips_5.jpg" alt="IMG">
+
+    <div class="text-block">
+        <h3>4. 아홀로틀의 이상증세</h3>
+        <p>환수를 잘 안해주고, 밥을 너무 많이주고, 이상한 바닥재를 깔거나, 온도 유지를 못해주면 아가미가 녹거나
+           배에 복수가 차올라서 몸이 떠오르고, 꼬리가 말리거나 입 주면에 발진이 생깁니다, 물곰팡이도 생길수있는데
+           이럴때는 바로 동물병원에 방문하시길 권장드립니다.
+        </p>
+    </div>
+    <img class="img-large" src="source/tips_6.jpg" alt="IMG">
+
+    <div class="text-block">
+        <h3>5. 아홀로틀 신체의 비밀</h3>
+        <p>아홀로틀은 사실 이것으로 정말 유명한데, 아홀로틀은 팔다리가 잘려도 재생이 가능합니다
+           그래서 저희 우파루파도 사실 서로 많이 팔다리 물고 뜯고 꼬리 물고 뜯고 많이 했는데
+           지금 다 재생해서 잘 지내고 있습니다. 처음엔 저도 정말 당황했습니다 ;;
+        </p>
+    </div>
+    <img class="img-large" src="source/tips_7.jpg" alt="IMG">
+
+    <div class="text-block">
+        <h3>6. 아홀로틀이 기분 좋을 때 하는 행동</h3>
+        <p>정말 의외라고 생각하실수 있지만 아홀로틀은 기분 좋으면 그냥 가만히 있습니다!
+           오히려 많이 움직이고 은신처로 들어가려고하는 움직임은 배고파서 자꾸 머리를 어항 끝에 부딪히거나
+           (먹이를 찾으려고) 불빛때문에 은신처로 들어가려고 하기때문에 움직이는겁니다, 가끔 물 위로 올라가고
+           헤엄치는걸 사람들이 기분 좋아한다고 생각하는데 그건 산소 공급이 잘 안되기 때문입니다 
+        </p>
+    </div>
+
+</section>
+
+<footer class="footer">
+    <div class="footer-left">
+        <div class="footer-title">AXOLOTL</div>
+        <div class="footer-instagram">@2eem_06 (instagram)</div>
+    </div>
+
+    <div class="footer-center">
+        <div class="footer-heading">참고한 연구/보호기관</div>
+        <div>Amphibian Ark (AArk)</div>
+        <div>GIAX (Axolotl Research Group - Xochimilco)</div>
+        <div>Somos Axolotl</div>
+    </div>
+
+    <div class="footer-right">
+        <div class="footer-heading">사진 출처</div>
+        <div>:https://www.google.com/search?q=+IUCN...</div>
+    </div>
+</footer>
+
+</body>
+</html>

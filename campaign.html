@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Axolotl Campaign</title>
+
+    <style>
+       * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            padding-top: 100px;
+            color: #333;
+        }
+
+       /* HEADER (통일된 스타일) */
+       header {
+            width: 100%;
+            padding: 25px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 10;
+            background: rgba(255,255,255,0.6);
+            backdrop-filter: blur(12px);
+            border-bottom: 1px solid rgba(255,255,255,0.5);
+        }
+
+        .logo a{
+    font-size: 18px;
+    letter-spacing: 1px;
+    text-decoration: none;
+    color:#333
+}
+
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 30px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #333;
+            font-size: 14px;
+        }
+
+        .container { 
+            width: 90%; 
+            margin: auto;
+            margin-top: 20px; 
+        }
+
+        .full-video {
+            position: relative;
+            background: #ccc;
+            width: 100%;
+            height: 350px;
+            margin: 40px 0;
+            overflow: hidden;
+        }
+
+        .video-text {
+            position: absolute;
+            bottom: 20px;
+            left: 25px;
+            color: white;
+            text-shadow: 0 0 8px rgba(0,0,0,0.7);
+        }
+
+        .video-text h1 {
+            font-size: 48px;
+            margin-bottom: 5px;
+        }
+
+        .video-text p {
+            font-size: 22px;
+        }
+
+        .wide-video, .large-img, .section-video {
+            background: #ccc;
+            width: 100%;
+            height: 350px;
+            margin: 40px 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .row {
+            display: flex;
+            gap: 20px;
+            margin: 40px 0;
+        }
+
+        .col {
+            flex: 1;
+            background: #ccc;
+            height: 250px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .text-box {
+            flex: 1;
+            padding: 20px;
+            font-size: 14px;
+            line-height: 1.6;
+        }
+
+        .footer {
+            width: 100%;
+            background: #808080;
+            color: white;
+            padding: 45px 100px;
+            box-sizing: border-box;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            font-family: Arial, Helvetica, sans-serif;
+            margin-top: 80px;
+        }
+
+        .footer-left { text-align: left; }
+        .footer-title { font-size: 32px; font-weight: 500; margin-bottom: -5px; }
+        .footer-instagram { font-size: 16px; opacity: 0.9; }
+
+        .footer-center {
+            text-align: left;
+            font-size: 11px;
+            width: 320px;
+            line-height: 1.6;
+            margin-left: 700px;
+        }
+
+        .footer-right {
+            text-align: left;
+            font-size: 11px;
+            line-height: 1.6;
+            width: 380px;
+        }
+
+        .footer-heading {
+            font-weight: 700;
+            margin-bottom: 5px;
+        }
+
+        @media (max-width: 900px) {
+            .row { flex-direction: column; }
+
+            .video-text h1 { font-size: 32px; }
+            .video-text p { font-size: 18px; }
+
+            .footer {
+                flex-direction: column;
+                gap: 20px;
+                padding: 40px;
+            }
+
+            .footer-center,
+            .footer-right {
+                margin-left: 0;
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+     <div class="logo"><a href="index.html">AXOLOTL</a></div>
+    <nav>
+        <ul>
+            <li><a href="about.html">about</a></li>
+            <li><a href="place.html">place</a></li>
+            <li><a href="history.html">history</a></li>
+            <li><a href="campaign.html">campaign</a></li>
+            <li><a href="tips.html">tips</a></li>
+        </ul>
+    </nav>
+</header>
+
+<div class="container">
+
+    <div class="full-video">
+        <video src="source/campaign_1.mp4" autoplay muted loop playsinline style="width:100%; height:100%; object-fit:cover;"></video>
+        <div class="video-text">
+            <h1>Campaign</h1>
+            <p>아홀로틀이 처한 위기</p>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col">
+            <img src="source/campaign_2.jpg" alt="환경 파괴" style="width:100%; height:100%; object-fit:cover;">
+        </div>
+
+        <div class="col">
+            <img src="source/campaign_3.jpg" alt="아홀로틀 방문" style="width:100%; height:100%; object-fit:cover;">
+        </div>
+    </div>
+
+    <div class="text-box">
+        <h2>1. 문제점</h2>
+        <p>
+            사실 제가 키우는 아홀로틀 종은 개량된 종이고 원래 아홀로틀 종류는 Widl Type 입니다<br>
+            이 아홀로틀이 최근 지구 가열화, 수질 오염, 생태계 교란종 등으로 인해 고통받고있습니다. (Video_연합뉴스)
+        </p>
+    </div>
+
+    <div class="wide-video">
+        <video src="source/campaign_4.mp4" controls style="width:100%; height:100%; object-fit:cover;"></video>
+    </div>
+
+    <div class="text-box">
+        <h2>2. 아홀로틀의 현실</h2>
+        <p>
+           이러한 문제들로 인해서 아홀로틀은 점점 설자리를 잃어가고 있습니다 책임없이 아홀로틀을 키우고 방류하는 사람들,<br>
+           잠깐 반짝하고 멈춘 사람들의 관심때문에 아홀로틀은 기억속에서 잊혀져가고있습니다.                  
+        </p>
+    </div>
+
+    <div class="section-video">
+        <video src="source/campaign_5.mp4" controls style="width:100%; height:100%; object-fit:cover;"></video>
+    </div>
+
+    <div class="text-box">
+        <h2>3. 개선해야할 방안</h2>
+        <p>아홀로틀에 조금이라도 관심가져주시고 혹시나 구매/입양을 고민하신다면 내가 끝까지 이 생명을<br>
+            책임질 수 있는지에 대해서 생각해주시기 바랍니다 
+        </p>
+    </div>
+
+    <div class="row">
+        <div>
+            <img src="source/campaign_6.png" alt="" style="width:100%; height:100%; object-fit:cover;">
+        </div>
+
+        <div class="text-box">
+            <h2>4. 정부의 노력</h2>
+            <p>국가들은 멸종 위기종 보호 정책과 서식지 복원 프로젝트를 추진하고 있습니다.<br>
+            또한 멕시코 정부는 happy Axolotl's day를 지정하여 매년 2월 1일마다 아홀로틀에 대한
+            사람들의 관심도를 높이고 있습니다. <br>
+        행복한 아홀로틀의 날! **멕시코 아홀로틀의 날(National Day of the Mexican Axolotl)**은 2월 1일로 지정되어 있습니다.<br>
+        이 날은 "웃는" 얼굴과 팔다리, 심지어 장기의 일부까지 재생하는 놀라운 능력으로 유명한 <br>
+        이 독특하고 심각한 멸종 위기종 도롱뇽을 기념하고 인식을 높이기 위해 지정되었습니다.<br>
+        아홀로틀은 자연 서식지에서 멕시코시티 근처의 소치밀코 호수 단지 단 한 곳에서만 발견됩니다.<br>
+        도시화와 오염으로 인해 개체 수가 매우 적으며, 멕시코국립자치대학교(UNAM)와 같은 기관에서는<br> 
+        이 종을 보호하기 위한 보존 노력을 계속하고 있습니다. (Google Gemini Assistant)
+       </p>
+        </div>
+    </div>
+
+    <div class="text-box">
+        <h2>5. 보호 단체</h2>
+        <p>국제자연보전연맹(IUCN)은 전 세계 자연과 생물종 보호를 위해 설립된 국제 환경 기구이다.<br>
+          멸종위기종의 위험 등급을 공식적으로 지정하는 기관으로 가장 널리 인정받는다.<br>
+          각종 생태계 조사와 환경 보고서를 통해 보호 정책 기준을 제공한다.<br>
+          전 세계 정부, 연구기관, NGO와 협력해 보전 활동을 수행한다.<br>
+          아홀로틀을 포함한 수많은 생물종의 보전 상태를 객관적으로 평가하는 핵심 기관이다.<br><br>
+          Amphibian Ark(AArk)는 전 세계 양서류를 보호하기 위해 만들어진 국제 보전 단체이다.<br>
+          멸종 위기에 놓인 개구리, 도롱뇽, 도마뱀붙이류 같은 양서류를 대상으로 <br>
+          구제·사육·번식 프로그램을 운영한다.<br>
+          야생에서 생존이 어려운 종을 보호 시설에서 유지하고 복원하는 데 집중한다.<br>
+         전문가, 동물원, 연구기관과 협력해 보전 전략과 교육 프로그램을 만든다.<br>
+          전 세계 양서류의 장기적 생존 가능성을 높이기 위해 과학 기반 보호 활동을 이어가는 기관이다.</p>
+    </div>
+
+    <div class="row" style="justify-content:center;">
+        <img src="source/campaign_7.png" alt="IUCN" style="width:150px; height:150px; background:#ffffff; object-fit:contain;">
+        <img src="source/campaign_8.png" alt="amphibian ark" style="width:150px; height:150px; margin-left:40px; background:#ffffff; object-fit:contain;">
+    </div>
+
+</div>
+
+<footer class="footer">
+    <div class="footer-left">
+        <div class="footer-title">AXOLOTL</div>
+        <div class="footer-instagram">@2eem_06 (instagram)</div>
+    </div>
+
+    <div class="footer-center">
+        <div class="footer-heading">참고한 연구/보호기관</div>
+        <div>Amphibian Ark (AArk)</div>
+        <div>GIAX (Axolotl Research Group - Xochimilco)</div>
+        <div>Somos Axolotl</div>
+    </div>
+
+    <div class="footer-right">
+        <div class="footer-heading">사진 출처</div>
+        <div>:https://www.google.com/search?q=+IUCN&s<br>
+        ca_esv=0cf4e596d1fd0e2a&udm=2&biw=1707&bih=772&xsrf<br>
+        =AE3TiFMuKrk79ZeA-gBV-7yZAV3jdhQEA%3A1764062486466&<br>
+        ei=FnUladqYHPH</div>
+    </div>
+</footer>
+
+</body>
+</html>
